@@ -12,29 +12,6 @@
 
 In this lab, you will explore a variety of techniques in Computer Vision.  These methods can be used in robot systems to track objects, locate items, or detect obstacles.
 
-## Section 2: Installing the Lab
-
-To perform this lab, you will need to get the lab3_computer_vision template into your catkin workspace.  First ensure that your Jet has internet access by connecting it using WiFi or ethernet.  Next ssh into Jet and enter the following command:
-
-```
-wget http://instructor-url/lab3_computer_vision/lab3_computer_vision-code.zip
-```
-
-Where the url should be replaced by the URL provided by your instructor.  Now unzip the lab:
-```
-unzip lab3_computer_vision-code.zip -d ~/catkin_ws/src/jetlabs/lab3_computer_vision
-```
-
-Delete the zip file:
-```
-rm lab3_computer_vision-code.zip
-```
-
-To build the code, use the following command when you are in `~/catkin_ws/`:
-```
-catkin_make --pkg lab3_computer_vision && source devel/setup.sh
-```
-
 ## Section 3: Basic OpenCV
 
 This section will use `lab3_computer_vision/src/basic_cv.cpp`.
