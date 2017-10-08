@@ -97,7 +97,7 @@ make -j 4 all
 #gsettings set org.gnome.Vino prompt-enabled false
 #gsettings set org.gnome.Vino require-encryption false
 
-echo "alias sr='source ~/catkin_ws/devel/setup.bash'" >> ~/.bashrc
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 
 sudo apt-get install --yes --force-yes --allow-unauthenticated libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev
 sudo apt-get install --yes --force-yes --allow-unauthenticated libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
