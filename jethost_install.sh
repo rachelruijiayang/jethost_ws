@@ -1,19 +1,19 @@
 #Ros Prerequisites
-#sudo update-locale LANG=C LANGUAGE=C LC_ALL=C LC_MESSAGES=POSIX
-#sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list'
-#wget https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -O - | sudo apt-key add -
-#sudo apt-get update
+sudo update-locale LANG=C LANGUAGE=C LC_ALL=C LC_MESSAGES=POSIX
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list'
+wget https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -O - | sudo apt-key add -
+sudo apt-get update
 
 #Ros kinetic Base
-#sudo apt-get -y install ros-kinetic-desktop-full
+sudo apt-get -y install ros-kinetic-desktop-full
 
 #Python Dependencies
-#sudo apt-get -y install python-rosdep python-dev python-pip python-rosinstall python-wstool
+sudo apt-get -y install python-rosdep python-dev python-pip python-rosinstall python-wstool
 
-#sudo rosdep init
-#rosdep update
-#echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
-#source ~/.bashrc
+sudo rosdep init
+rosdep update
+echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
 
 #Ros packages
 sudo apt-get -y install ros-kinetic-rosserial-arduino
@@ -69,6 +69,7 @@ cd ~/catkin_ws
 wstool init src
 wstool merge -t src src/rosjet/rosjet.rosinstall
 wstool update -t src
+catkin_make
 
 #Install Caffe (https://gist.github.com/jetsonhacks/acf63b993b44e1fb9528)
 sudo add-apt-repository universe
