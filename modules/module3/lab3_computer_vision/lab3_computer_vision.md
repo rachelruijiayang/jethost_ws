@@ -128,7 +128,7 @@ The `HoughLinesP` function saves each line to the lines vector.  Each line entry
 
 In this section you will use the `vision_tracking` node.  You can run this node using roslaunch:
 ```
-roslaunch lab3_computer_vision vision_track.launch
+roslaunch lab3_computer_vision lab3_track.launch
 ```
 
 The `vision_tracking` node will identify and track a colored object.  Choose an object that is brightly colored and easy to move (a small ball is a good choice).
@@ -155,7 +155,7 @@ cv::cvtColor(mask, dst, CV_GRAY2BGR);
 
 We left the hue, saturation, and value parameters for the upper and lower thresholds as variables, so we can dynamically change them while the node is running.  To try this, launch the `vision_tracking` node:
 ```
-roslaunch lab3_computer_vision vision_track.launch`
+roslaunch lab3_computer_vision lab3_track.launch`
 ```
 
 Then open the image_view on the host computer:
